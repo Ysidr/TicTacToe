@@ -20,8 +20,8 @@ table {
 
 /* Zellen */
 td {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     text-align: center;
     vertical-align: middle;
     border: 5px solid white; /* Weiße Linien nur innerhalb */
@@ -47,4 +47,8 @@ table tr:first-child td {
 
 table tr:last-child td {
     border-bottom: none;
+}
+td:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+    cursor: pointer;
 }
