@@ -1,0 +1,50 @@
+/* Hintergrundfarbe der gesamten Seite */
+body {
+    background-color: #323232;
+    font-family: 'Open Sans', sans-serif; /* Schriftart Open Sans */
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Vollbildhöhe */
+}
+
+/* Tabelle */
+table {
+    border-collapse: collapse; /* Keine äußeren Umrandungen */
+    margin: 20px auto;
+}
+
+/* Zellen */
+td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    border: 5px solid white; /* Weiße Linien nur innerhalb */
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white; /* Textfarbe weiß */
+    background-color: transparent; /* Hintergrundfarbe der Zellen bleibt transparent */
+}
+
+/* Entferne äußere Umrandung */
+table td:first-child {
+    border-left: none;
+}
+
+table td:last-child {
+    border-right: none;
+}
+
+table tr:first-child td {
+    border-top: none;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
